@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mytestsuite]">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+    <listener class-name="listeners.Retrylistners"/>
+  </listeners>
+  <test thread-count="5" name="myTest(failed)">
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="loginWithValidUsernameAndInvalidPassword" invocation-numbers="2"/>
+          <include name="initializeBrowser"/>
+          <include name="loginWithInvalidUsernameAndValidPassword"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.CategoryTest">
+        <methods>
+          <include name="verifyCategoryButton"/>
+          <include name="initializeBrowser"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testcases.CategoryTest -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [Mytestsuite] -->

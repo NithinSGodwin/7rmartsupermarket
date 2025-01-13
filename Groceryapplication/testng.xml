@@ -1,0 +1,17 @@
+<suite name="Mytestsuite">
+	
+	<parameter name="browser" value="Chrome"></parameter>
+	
+	<listeners>
+		<listener class-name="listeners.Listeners"></listener>
+		<listener class-name="listeners.Retrylistners"></listener>
+	</listeners>
+	<test threadcount="3" name="myTest">
+		
+	<classes>
+		<class name="testcases.LoginTest"></class>
+		<class name="testcases.CategoryTest"></class>
+	</classes>
+
+	</test>
+</suite>
