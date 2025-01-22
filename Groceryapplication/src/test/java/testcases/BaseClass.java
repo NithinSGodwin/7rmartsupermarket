@@ -1,7 +1,6 @@
 package testcases;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -12,16 +11,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+
 import constant.Constant;
 import Utilities.Screenshotutility;
+import Utilities.Waitutility;
 
 public class BaseClass {
 	Properties prop;
 	FileInputStream fs;
+	Waitutility waitutilities=new Waitutility();
 	
 	public WebDriver driver;
 	
-  @BeforeMethod
+  @BeforeMethod(alwaysRun=true)
+  @Parameters("browser")
   public void initializeBrowser(String browser) throws Exception {
 	  
 	  prop=new Properties();
@@ -46,7 +50,7 @@ public class BaseClass {
 		 
 		 driver.get(prop.getProperty("url"));
 		 driver.manage().window().maximize();
-	 
+		 waitutilities.implicitWait(driver);
   }
 
   @AfterMethod(alwaysRun=true)

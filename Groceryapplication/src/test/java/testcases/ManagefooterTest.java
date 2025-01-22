@@ -1,24 +1,26 @@
 package testcases;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import pages.Homepage;
 import pages.Loginpage;
-import pages.Managefootertext;
+import pages.ManageFooterText;
 
 public class ManagefooterTest {
 	Loginpage lp;
-
+	Homepage hp;
+	ManageFooterText mft;
   @Test
   public void verifyEditButtonOnFooterText() throws IOException {
 		 lp.loginByExcelData();
-	  Managefootertext footer = new Managefootertext(null);
-	  footer.clickOnFooterTextButton();
-	  footer.clickOnEditButton();
-	  footer.address();
-	  footer.email();
-	  footer.phonenumber();
-	  footer.ClickOnUpdateButton();
+		 hp=lp.loginByExcelData();
+		 mft=hp.clickManageFooterTextButton().clickOnEditButton().address().email().phonenumber().ClickOnUpdateButton();
+		 
+		 boolean isAlertLoaded=mft.isAlertDisplayed();
+		 assertTrue(isAlertLoaded,"");
   }
 }

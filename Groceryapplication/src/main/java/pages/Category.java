@@ -14,89 +14,86 @@ public class Category {
 		PageFactory.initElements(driver, this);
 	}
 	
-//	@FindBy(xpath="//input[@placeholder='Username']")WebElement usernamefield;
-//	@FindBy(xpath="//input[@name='password']")WebElement passwordfield;
-//	@FindBy(xpath="//button[@class='btn btn-dark btn-block']")WebElement signinbutton;
-	@FindBy(xpath="//p[text()=\"Category\"]")WebElement categorybutton;
-	@FindBy(xpath="//a[@class=\"btn btn-rounded btn-danger\"]")WebElement newcategorybutton;
-	@FindBy(xpath="//input[@id=\"category\"]")WebElement entercategory;
-	@FindBy(xpath="//li[@class=\'ms-elem-selectable ms-hover\']")WebElement discount;
-	@FindBy(xpath="//input[@name=\'main_img\']")WebElement fileupload;
-	@FindBy(xpath="//button[@class=\"btn btn-danger\"]")WebElement savebutton;
+	@FindBy(xpath="p[text()='Category']")WebElement categorybutton;
+	@FindBy(xpath="a[@class='btn btn-rounded btn-danger']")WebElement newcategorybutton;
+	@FindBy(xpath="input[@id='category']")WebElement entercategory;
+	@FindBy(xpath="li[@class='ms-elem-selectable ms-hover']")WebElement discount;
+	@FindBy(xpath="input[@name='main_img']")WebElement fileupload;
+	@FindBy(xpath="button[@class='btn btn-danger']")WebElement savebutton;
+	@FindBy(xpath="i[@class='icon fas fa-check']")WebElement alert;
 	
-	@FindBy(xpath="//p[text()=\"Category\"]")WebElement categorybutton2;
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement searchbutton;
-	@FindBy(xpath="//input[@class=\"form-control\"]") WebElement searchcoloumn;
-	@FindBy(xpath="//button[@class=\"btn btn-danger btn-fix\"]")WebElement searchsubmitbutton;
+	@FindBy(xpath="p[text()='Category']")WebElement categorybutton2;
+	@FindBy(xpath="a[@class='btn btn-rounded btn-primary']")WebElement searchbutton;
+	@FindBy(xpath="input[@class='form-control']") WebElement searchcoloumn;
+	@FindBy(xpath="button[@class='btn btn-danger btn-fix']")WebElement searchsubmitbutton;
+	@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']") WebElement resultNotFoundMessage;	
 	
-	
-	
-	
-//	public void enterUsername(String username)
+//	public Category clickOnCategoryButton()
 //	{
-//		usernamefield.sendKeys(username);
+//		categorybutton.click();
+//		return this;
 //	}
-//
-//	public void enterPassword(String password)
-//	{
-//		passwordfield.sendKeys(password);
-//	}
-//
-//	public void clickOnSignInButton()
-//	{
-//		signinbutton.click();
-//	}
-//	
-	public void clickOnCategoryButton()
-	{
-		categorybutton.click();
-	}
 	
-	public void clickOnNewCategoryButton()
+	public Category clickOnNewCategoryButton()
 	{
 		newcategorybutton.click();
+		return this;
 	}
 	
-	public void enterCategory()
+	public Category enterCategory()
 	{
 		entercategory.sendKeys("Maggie");
+		return this;
 	}
 	
-	public void clickOnDiscount()
+	public Category clickOnDiscount()
 	{
 		discount.click();
+		return this;
 	}
 	
-	public void chooseFile()
+	public Category chooseFile()
 	{
-		fileupload.sendKeys("\"C:\\Users\\91807\\OneDrive\\maggi-noodles.webp\"");
+		fileupload.sendKeys("C:\\Users\\91807\\OneDrive\\maggi-noodles.webp");
+		return this;
 	}
 	
-	public void clickOnSaveButton()
+	public Category clickOnSaveButton()
 	{
 		savebutton.click();
+		return this;
 	}
 	
-	public void clickOnCategoryButton2()
+	public Category clickOnCategoryButton2()
 	{
 		categorybutton2.click();
+		return this;
 	}
    
-	
-	public void clickOnSearchButton()
-	
+	public Category clickOnSearchButton()
 	{
 		searchbutton.click();
+		return this;
 	}
 	
 	
-	public void enterCategoryName()
+	public Category enterCategoryName()
 	{
 		searchcoloumn.sendKeys("cookies");
+		return this;
 	}
 	
-	public void clickOnSearchButton2()
+	public Category clickOnSearchButton2()
 	{
 		searchsubmitbutton.click();
+		return this;
+	}
+	
+	public boolean isAlertDisplayed() {
+		return alert.isDisplayed();
+	}
+	
+	public boolean checkOnResultMessage() {
+		return resultNotFoundMessage.isDisplayed();
 	}
 }

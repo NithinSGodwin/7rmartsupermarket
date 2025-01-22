@@ -1,74 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-05T23:10:10 IST" name="Mytestsuite" finished-at="2025-01-05T23:10:28 IST" duration-ms="18367">
+  <suite started-at="2025-01-21T12:00:38 IST" name="Mytestsuite" finished-at="2025-01-21T12:03:26 IST" duration-ms="168391">
     <groups>
     </groups>
-    <test started-at="2025-01-05T23:10:10 IST" name="myTest" finished-at="2025-01-05T23:10:28 IST" duration-ms="18367">
-      <class name="testcases.CategoryTest">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.CategoryTest@61a88b8c]" started-at="2025-01-05T23:10:26 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:28 IST" duration-ms="1968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyCategoryButton()[pri:0, instance:testcases.CategoryTest@61a88b8c]" started-at="2025-01-05T23:10:28 IST" name="verifyCategoryButton" finished-at="2025-01-05T23:10:28 IST" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pages.Loginpage.loginByExcelData()" because "this.lp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pages.Loginpage.loginByExcelData()" because "this.lp" is null
-at testcases.CategoryTest.verifyCategoryButton(CategoryTest.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryButton -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.CategoryTest@61a88b8c]" started-at="2025-01-05T23:10:28 IST" name="driverQuit" finished-at="2025-01-05T23:10:28 IST" duration-ms="164" status="PASS">
+    <test started-at="2025-01-21T12:00:38 IST" name="myTest" finished-at="2025-01-21T12:03:26 IST" duration-ms="168391">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:00:38 IST" name="initializeBrowser" finished-at="2025-01-21T12:01:02 IST" duration-ms="23505" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCategoryButton status=FAILURE method=CategoryTest.verifyCategoryButton()[pri:0, instance:testcases.CategoryTest@61a88b8c] output={null}]]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.CategoryTest -->
-      <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:10 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:12 IST" duration-ms="2042" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:12 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-05T23:10:12 IST" duration-ms="537" status="PASS">
+        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:02 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-21T12:01:05 IST" duration-ms="3282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,22 +34,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:12 IST" name="driverQuit" finished-at="2025-01-05T23:10:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:05 IST" name="driverQuit" finished-at="2025-01-21T12:01:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:12 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:14 IST" duration-ms="1541" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:05 IST" name="initializeBrowser" finished-at="2025-01-21T12:01:21 IST" duration-ms="16600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:14 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-05T23:10:14 IST" duration-ms="513" status="PASS">
+        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:21 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-21T12:01:24 IST" duration-ms="2195" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,22 +72,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:14 IST" name="driverQuit" finished-at="2025-01-05T23:10:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:24 IST" name="driverQuit" finished-at="2025-01-21T12:01:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:14 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:16 IST" duration-ms="1455" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:24 IST" name="initializeBrowser" finished-at="2025-01-21T12:01:35 IST" duration-ms="11681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:16 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-05T23:10:16 IST" duration-ms="507" status="PASS">
+        <test-method signature="loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:35 IST" name="loginWithInValidUsernameAndInvalidPassword" data-provider="data provider2" finished-at="2025-01-21T12:01:38 IST" duration-ms="2361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,40 +110,97 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:16 IST" name="driverQuit" finished-at="2025-01-05T23:10:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:38 IST" name="driverQuit" finished-at="2025-01-21T12:01:38 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithInValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method signature="loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:16 IST" name="loginWithInvalidUsernameAndValidPassword" finished-at="2025-01-05T23:10:16 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:38 IST" name="initializeBrowser" finished-at="2025-01-21T12:01:52 IST" duration-ms="14011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:01:52 IST" name="loginWithInvalidUsernameAndValidPassword" data-provider="data provider" finished-at="2025-01-21T12:02:06 IST" duration-ms="13819" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [loginWithInvalidUsernameAndValidPassword] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a6a09bbc27b80b0c5a68fcb94a28a81, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55054/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a6a09bbc27b80b0c5a68fcb94a28a81]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [loginWithInvalidUsernameAndValidPassword] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a6a09bbc27b80b0c5a68fcb94a28a81, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55054/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a6a09bbc27b80b0c5a68fcb94a28a81
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at pages.Loginpage.getalertmessage(Loginpage.java:60)
+at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -197,30 +218,92 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:16 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:18 IST" duration-ms="1582" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:06 IST" name="driverQuit" finished-at="2025-01-21T12:02:06 IST" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:06 IST" name="initializeBrowser" finished-at="2025-01-21T12:02:19 IST" duration-ms="13714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:18 IST" name="loginWithValidCredentials" finished-at="2025-01-05T23:10:18 IST" duration-ms="8" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:19 IST" name="loginWithInvalidUsernameAndValidPassword" data-provider="data provider" finished-at="2025-01-21T12:02:33 IST" duration-ms="13329" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[C:\Users\91807\eclipse-workspace\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72f9187f4dc5222da28cf4f31b686245, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55089/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72f9187f4dc5222da28cf4f31b686245]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\91807\eclipse-workspace\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at Utilities.Excelutility.readStringData(Excelutility.java:17)
-at pages.Loginpage.loginByExcelData(Loginpage.java:47)
-at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:18)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72f9187f4dc5222da28cf4f31b686245, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55089/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72f9187f4dc5222da28cf4f31b686245
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at pages.Loginpage.getalertmessage(Loginpage.java:60)
+at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -229,7 +312,159 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:33 IST" name="driverQuit" finished-at="2025-01-21T12:02:33 IST" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:33 IST" name="initializeBrowser" finished-at="2025-01-21T12:02:43 IST" duration-ms="10197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:43 IST" name="loginWithInvalidUsernameAndValidPassword" data-provider="data provider" finished-at="2025-01-21T12:02:45 IST" duration-ms="2018" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[alert message is not as expected expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: alert message is not as expected expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:45 IST" name="driverQuit" finished-at="2025-01-21T12:02:45 IST" duration-ms="100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithInvalidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:45 IST" name="initializeBrowser" finished-at="2025-01-21T12:02:55 IST" duration-ms="9923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:55 IST" name="loginWithValidCredentials" finished-at="2025-01-21T12:02:55 IST" duration-ms="9" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\91807\git\7rmartsupermarket\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\91807\git\7rmartsupermarket\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at Utilities.Excelutility.readStringData(Excelutility.java:17)
+at pages.Loginpage.loginByExcelData(Loginpage.java:51)
+at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -251,22 +486,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:18 IST" name="driverQuit" finished-at="2025-01-05T23:10:18 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:55 IST" name="driverQuit" finished-at="2025-01-21T12:02:55 IST" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=LoginTest.loginWithValidCredentials()[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=LoginTest.loginWithValidCredentials()[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:18 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:20 IST" duration-ms="1683" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:02:55 IST" name="initializeBrowser" finished-at="2025-01-21T12:03:01 IST" duration-ms="6110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:20 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-05T23:10:20 IST" duration-ms="491" status="PASS">
+        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:01 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-21T12:03:04 IST" duration-ms="2806" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,22 +524,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:20 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:22 IST" duration-ms="1797" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:20 IST" name="driverQuit" finished-at="2025-01-05T23:10:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:04 IST" name="initializeBrowser" finished-at="2025-01-21T12:03:11 IST" duration-ms="7103" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:04 IST" name="driverQuit" finished-at="2025-01-21T12:03:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:22 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-05T23:10:23 IST" duration-ms="545" status="PASS">
+        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:11 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-21T12:03:14 IST" duration-ms="2439" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -313,22 +562,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:23 IST" name="driverQuit" finished-at="2025-01-05T23:10:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:14 IST" name="driverQuit" finished-at="2025-01-21T12:03:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:23 IST" name="initializeBrowser" finished-at="2025-01-05T23:10:25 IST" duration-ms="2022" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:14 IST" name="initializeBrowser" finished-at="2025-01-21T12:03:25 IST" duration-ms="11551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:25 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-05T23:10:26 IST" duration-ms="933" status="FAIL">
+        <test-method signature="loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:25 IST" name="loginWithValidUsernameAndInvalidPassword" data-provider="data provider1" finished-at="2025-01-21T12:03:26 IST" duration-ms="1153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -337,88 +593,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[admin89]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6e24859a0e26c5c66dec78a0f134ea5, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61599}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61599/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6e24859a0e26c5c66dec78a0f134ea5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-danger alert-dismissible']"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6e24859a0e26c5c66dec78a0f134ea5, findElement {value=//div[@class='alert alert-danger alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61599}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61599/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6e24859a0e26c5c66dec78a0f134ea5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at pages.Loginpage.getalertmessage(Loginpage.java:55)
-at testcases.LoginTest.loginWithValidUsernameAndInvalidPassword(LoginTest.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@388526fb]" started-at="2025-01-05T23:10:26 IST" name="driverQuit" finished-at="2025-01-05T23:10:26 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@7d3e8655]" started-at="2025-01-21T12:03:26 IST" name="driverQuit" finished-at="2025-01-21T12:03:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=FAILURE method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@388526fb] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@7d3e8655] output={null}]]]>
               </value>
             </param>
           </params>

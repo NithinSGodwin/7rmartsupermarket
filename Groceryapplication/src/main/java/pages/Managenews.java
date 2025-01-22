@@ -16,18 +16,35 @@ public class Managenews {
 	@FindBy(xpath="//a[@class=\"btn btn-rounded btn-primary\"]")WebElement searchbutton;
 	@FindBy(xpath="//input[@class=\"form-control\"]")WebElement searchcoloumn;
 	@FindBy(xpath="//button[@class=\"btn btn-danger btn-fix\"]")WebElement searchbutton2;
+	@FindBy(xpath = "//a[text()=' Reset']")WebElement resetButton;
+	@FindBy(xpath = "//h4[text()='Manage News']")WebElement tableTitle;
 	
-	
-	public void clickOnManageNews() {
+	public Managenews clickOnManageNews() {
 		managenews.click();
+		return this;
 	}
-	public void clickOnSearchButton() {
+	
+	public Managenews clickOnSearchButton() {
 		searchbutton.click();
+		return this;
 	}
-	public void enternews() {
+	
+	public Managenews enterNews() {
 		searchcoloumn.sendKeys("Manmohansingh died");
+		return this;
 	}
-	public void clickonSearchButton2() {
+	
+	public Managenews clickonSearchButton2() {
 		searchbutton2.click();
+		return this;
+	}
+	
+	public Managenews clickOnResetButton() {
+		resetButton.click();
+		return this;
+	}
+	
+	public boolean tableTitleIsDisplayed() {
+		return tableTitle.isDisplayed();
 	}
 }

@@ -7,21 +7,23 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import constant.Constant;
+import pages.Homepage;
 import pages.Loginpage;
 
 public class LoginTest extends BaseClass{
-@Test(retryAnalyzer=retry.Retry.class)
+	Homepage hp;
+@Test
 	  public void loginWithValidCredentials() throws IOException {
 		  
-		  
 		  Loginpage login=new  Loginpage(driver);
-		  login.loginByExcelData();
+		  hp=login.loginByExcelData();
+		  
 		  boolean actualresult=login.ishomePagedDisplayed();
 		  boolean expectedresult=true;
 		  Assert.assertEquals(expectedresult, actualresult,Constant.lp_verifyloginwithvalidcredentials);
 	  }
 
-	@Test
+	@Test(dataProvider="data provider")
 	public void loginWithInvalidUsernameAndValidPassword(String username,String password)
 	{
 		Loginpage login=new Loginpage(driver);
@@ -57,7 +59,7 @@ public class LoginTest extends BaseClass{
 	@DataProvider(name="data provider1")
 	public Object[][] dpmethod1() 
 	{
-		  return new Object[][] {{"admin","admin12"},{"admin","admin23"},{"admin","admin"}};
+		  return new Object[][] {{"admin","admin12"},{"admin","admin23"},{"admin","admin89"}};
 	}
 	
 	@Test(dataProvider="data provider2")

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Generalutility {
 	
@@ -55,12 +57,19 @@ public class Generalutility {
 	actions.sendKeys(Keys.ARROW_DOWN).perform();
 	}
 
-
 	public void dragAndDrop(WebElement element)
 	{Actions actions = new Actions(driver);
 	actions.dragAndDrop(element, element);
 		
 	}
+	
+	public String generateCurrentDateAndTime() {
+
+		Date date = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyhhmmss");
+		return formatter.format(date);
+
+		}
 
 	public void javaScriptExecutor(WebElement element)
 

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Mytestsuite" class="navigator-link ">
-                    <span>C:\Users\91807\eclipse-workspace\Groceryapplication\testng.xml</span>
+                    <span>C:\Users\91807\git\7rmartsupermarket\Groceryapplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,22 +103,22 @@
                     <div class="method-list-content failed suite-Mytestsuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUsernameAndValidPassword">loginWithInvalidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUsernameAndValidPassword(admin1, admin)">loginWithInvalidUsernameAndValidPassword(admin1, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUsernameAndValidPassword(admin2, admin)">loginWithInvalidUsernameAndValidPassword(admin2, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUsernameAndValidPassword(admin3, admin)">loginWithInvalidUsernameAndValidPassword(admin3, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithValidUsernameAndInvalidPassword(admin, admin)">loginWithValidUsernameAndInvalidPassword(admin, admin)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.CategoryTest" class="method navigator-link" hash-for-method="verifyCategoryButton">verifyCategoryButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Mytestsuite -->
@@ -132,6 +132,11 @@
                     <div class="method-list-content passed suite-Mytestsuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInValidUsernameAndInvalidPassword(admin1, admin23)">loginWithInValidUsernameAndInvalidPassword(admin1, admin23)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInValidUsernameAndInvalidPassword(admin3, admin3)">loginWithInValidUsernameAndInvalidPassword(admin3, admin3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -142,7 +147,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithInValidUsernameAndInvalidPassword(admin1, admin23)">loginWithInValidUsernameAndInvalidPassword(admin1, admin23)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithValidUsernameAndInvalidPassword(admin, admin89)">loginWithValidUsernameAndInvalidPassword(admin, admin89)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -175,50 +180,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithInvalidUsernameAndValidPassword">
-                  </a> <!-- loginWithInvalidUsernameAndValidPassword -->
+                  <a name="loginWithInvalidUsernameAndValidPassword(admin1, admin)">
+                  </a> <!-- loginWithInvalidUsernameAndValidPassword(admin1, admin) -->
                   <span class="method-name">loginWithInvalidUsernameAndValidPassword</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [loginWithInvalidUsernameAndValidPassword] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials">
-                  </a> <!-- loginWithValidCredentials -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\91807\eclipse-workspace\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx&quot; (The filename, directory name, or volume label syntax is incorrect)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at Utilities.Excelutility.readStringData(Excelutility.java:17)
-	at pages.Loginpage.loginByExcelData(Loginpage.java:47)
-	at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidUsernameAndInvalidPassword(admin, admin)">
-                  </a> <!-- loginWithValidUsernameAndInvalidPassword(admin, admin) -->
-                  <span class="method-name">loginWithValidUsernameAndInvalidPassword</span>
-                  <span class="parameters">(admin,admin)</span>
+                  <span class="parameters">(admin1,admin)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
-  (Session info: chrome=131.0.6778.205)
+  (Session info: chrome=131.0.6778.266)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6e24859a0e26c5c66dec78a0f134ea5, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61599}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61599/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6e24859a0e26c5c66dec78a0f134ea5
+Command: [6a6a09bbc27b80b0c5a68fcb94a28a81, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55054/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a6a09bbc27b80b0c5a68fcb94a28a81
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -232,31 +206,78 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at pages.Loginpage.getalertmessage(Loginpage.java:55)
-	at testcases.LoginTest.loginWithValidUsernameAndInvalidPassword(LoginTest.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pages.Loginpage.getalertmessage(Loginpage.java:60)
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Mytestsuite-class-failed -->
-          <div class="suite-Mytestsuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.CategoryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCategoryButton">
-                  </a> <!-- verifyCategoryButton -->
-                  <span class="method-name">verifyCategoryButton</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.Loginpage.loginByExcelData()&quot; because &quot;this.lp&quot; is null
-	at testcases.CategoryTest.verifyCategoryButton(CategoryTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames
+                  <a name="loginWithInvalidUsernameAndValidPassword(admin2, admin)">
+                  </a> <!-- loginWithInvalidUsernameAndValidPassword(admin2, admin) -->
+                  <span class="method-name">loginWithInvalidUsernameAndValidPassword</span>
+                  <span class="parameters">(admin2,admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72f9187f4dc5222da28cf4f31b686245, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55089/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72f9187f4dc5222da28cf4f31b686245
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pages.Loginpage.getalertmessage(Loginpage.java:60)
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidUsernameAndValidPassword(admin3, admin)">
+                  </a> <!-- loginWithInvalidUsernameAndValidPassword(admin3, admin) -->
+                  <span class="method-name">loginWithInvalidUsernameAndValidPassword</span>
+                  <span class="parameters">(admin3,admin)</span>
+                  <div class="stack-trace">java.lang.AssertionError: alert message is not as expected expected [true] but found [false]
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\91807\git\7rmartsupermarket\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx&quot; (The filename, directory name, or volume label syntax is incorrect)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at Utilities.Excelutility.readStringData(Excelutility.java:17)
+	at pages.Loginpage.loginByExcelData(Loginpage.java:51)
+	at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -268,6 +289,14 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
               <span class="class-name">testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInValidUsernameAndInvalidPassword(admin1, admin23)">
+                  </a> <!-- loginWithInValidUsernameAndInvalidPassword(admin1, admin23) -->
+                  <span class="method-name">loginWithInValidUsernameAndInvalidPassword</span>
+                  <span class="parameters">(admin1,admin23)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginWithInValidUsernameAndInvalidPassword(admin3, admin3)">
@@ -286,10 +315,10 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithInValidUsernameAndInvalidPassword(admin1, admin23)">
-                  </a> <!-- loginWithInValidUsernameAndInvalidPassword(admin1, admin23) -->
-                  <span class="method-name">loginWithInValidUsernameAndInvalidPassword</span>
-                  <span class="parameters">(admin1,admin23)</span>
+                  <a name="loginWithValidUsernameAndInvalidPassword(admin, admin89)">
+                  </a> <!-- loginWithValidUsernameAndInvalidPassword(admin, admin89) -->
+                  <span class="method-name">loginWithValidUsernameAndInvalidPassword</span>
+                  <span class="parameters">(admin,admin89)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -313,13 +342,14 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
         </div> <!-- panel Mytestsuite -->
         <div panel-name="test-xml-Mytestsuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91807\eclipse-workspace\Groceryapplication\testng.xml</span>
+            <span class="header-content">C:\Users\91807\git\7rmartsupermarket\Groceryapplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Mytestsuite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.Listeners&quot;/&gt;
     &lt;listener class-name=&quot;listeners.Retrylistners&quot;/&gt;
@@ -327,7 +357,6 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
   &lt;test thread-count=&quot;5&quot; name=&quot;myTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;testcases.CategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- myTest --&gt;
 &lt;/suite&gt; &lt;!-- Mytestsuite --&gt;
@@ -341,7 +370,7 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">myTest (2 classes)</span>
+                <span class="test-name">myTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -367,48 +396,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidUsernameAndInvalidPassword')
+data.setCell(0, 1, 'loginWithInvalidUsernameAndValidPassword')
 data.setCell(0, 2, 'testcases.LoginTest')
-data.setCell(0, 3, 933);
+data.setCell(0, 3, 13819);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidUsernameAndInvalidPassword')
+data.setCell(1, 1, 'loginWithInvalidUsernameAndValidPassword')
 data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 545);
+data.setCell(1, 3, 13329);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginWithInValidUsernameAndInvalidPassword')
 data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 537);
+data.setCell(2, 3, 3282);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginWithInValidUsernameAndInvalidPassword')
+data.setCell(3, 1, 'loginWithValidUsernameAndInvalidPassword')
 data.setCell(3, 2, 'testcases.LoginTest')
-data.setCell(3, 3, 513);
+data.setCell(3, 3, 2806);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithInValidUsernameAndInvalidPassword')
+data.setCell(4, 1, 'loginWithValidUsernameAndInvalidPassword')
 data.setCell(4, 2, 'testcases.LoginTest')
-data.setCell(4, 3, 507);
+data.setCell(4, 3, 2439);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginWithValidUsernameAndInvalidPassword')
+data.setCell(5, 1, 'loginWithInValidUsernameAndInvalidPassword')
 data.setCell(5, 2, 'testcases.LoginTest')
-data.setCell(5, 3, 491);
+data.setCell(5, 3, 2361);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithValidCredentials')
+data.setCell(6, 1, 'loginWithInValidUsernameAndInvalidPassword')
 data.setCell(6, 2, 'testcases.LoginTest')
-data.setCell(6, 3, 8);
+data.setCell(6, 3, 2195);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCategoryButton')
-data.setCell(7, 2, 'testcases.CategoryTest')
-data.setCell(7, 3, 4);
+data.setCell(7, 1, 'loginWithInvalidUsernameAndValidPassword')
+data.setCell(7, 2, 'testcases.LoginTest')
+data.setCell(7, 3, 2018);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginWithInvalidUsernameAndValidPassword')
+data.setCell(8, 1, 'loginWithValidUsernameAndInvalidPassword')
 data.setCell(8, 2, 'testcases.LoginTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 3, 1153);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithValidCredentials')
+data.setCell(9, 2, 'testcases.LoginTest')
+data.setCell(9, 3, 9);
 window.suiteTableData['Mytestsuite']= { tableData: data, tableDiv: 'times-div-Mytestsuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Mytestsuite">
               </div> <!-- times-div-Mytestsuite -->
             </div> <!-- times-div -->
@@ -436,109 +469,132 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidUsernameAndInvalidPassword(admin1, admin12)</span>
-                <span class="method-start">2045 ms</span>
+                <span class="method-start">23506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWit...)</span>
-                <span class="method-start">2624 ms</span>
+                <span class="method-start">26836 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">2625 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">26838 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidUsernameAndInvalidPassword(admin1, admin23)</span>
-                <span class="method-start">4166 ms</span>
+                <span class="method-start">43438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWit...)</span>
-                <span class="method-start">4680 ms</span>
+                <span class="method-start">45634 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">4682 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">45634 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidUsernameAndInvalidPassword(admin3, admin3)</span>
-                <span class="method-start">6137 ms</span>
+                <span class="method-start">57315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWit...)</span>
-                <span class="method-start">6646 ms</span>
+                <span class="method-start">59677 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">6658 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">59679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithInvalidUsernameAndValidPassword(admin1, admin)</span>
+                <span class="method-start">73690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithI...)</span>
+                <span class="method-start">87525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">87633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithInvalidUsernameAndValidPassword(admin2, admin)</span>
+                <span class="method-start">101347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithI...)</span>
+                <span class="method-start">114680 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">114790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithInvalidUsernameAndValidPassword(admin3, admin)</span>
+                <span class="method-start">124987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=loginWithInvalidUsernameAndValidPassword status=FAILURE method=LoginTest.loginWithI...)</span>
+                <span class="method-start">127007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">127108 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">8240 ms</span>
+                <span class="method-start">137032 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithValidCredentials status=FAILURE method=LoginTest.loginWithValidCredentials...)</span>
-                <span class="method-start">8254 ms</span>
+                <span class="method-start">137041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">8454 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">137179 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidUsernameAndInvalidPassword(admin, admin12)</span>
-                <span class="method-start">10137 ms</span>
+                <span class="method-start">143289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">10629 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">146095 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithV...)</span>
-                <span class="method-start">10629 ms</span>
+                <span class="method-start">146095 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">loginWithValidUsernameAndInvalidPassword(admin, admin23)</span>
-                <span class="method-start">12426 ms</span>
+                <span class="method-start">153198 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithV...)</span>
-                <span class="method-start">12972 ms</span>
+                <span class="method-start">155637 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">12973 ms</span>
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">155638 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginWithValidUsernameAndInvalidPassword(admin, admin)</span>
-                <span class="method-start">14995 ms</span>
+                <span class="method-name">loginWithValidUsernameAndInvalidPassword(admin, admin89)</span>
+                <span class="method-start">167190 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=loginWithValidUsernameAndInvalidPassword status=FAILURE method=LoginTest.loginWithV...)</span>
-                <span class="method-start">15939 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.CategoryTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeBrowser</span>
-                <span class="method-start">16191 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyCategoryButton</span>
-                <span class="method-start">18161 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyCategoryButton status=FAILURE method=CategoryTest.verifyCategoryButton()[pri:...)</span>
-                <span class="method-start">18169 ms</span>
+                <span class="method-name">driverQuit([TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithV...)</span>
+                <span class="method-start">168346 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

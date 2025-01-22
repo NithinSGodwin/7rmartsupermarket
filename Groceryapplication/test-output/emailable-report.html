@@ -9,38 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Mytestsuite</th></tr>
-<tr><td><a href="#t0">myTest</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">18,367</td><td></td><td></td></tr>
+<tr><td><a href="#t0">myTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">168,391</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mytestsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">myTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.CategoryTest</td><td><a href="#m0">verifyCategoryButton</a></td><td rowspan="1">1736098828471</td><td rowspan="1">4</td></tr><tr class="failedodd"><td rowspan="3">testcases.LoginTest</td><td><a href="#m1">loginWithInvalidUsernameAndValidPassword</a></td><td rowspan="1">1736098816958</td><td rowspan="1">0</td></tr><tr class="failedodd"><td><a href="#m2">loginWithValidCredentials</a></td><td rowspan="1">1736098818550</td><td rowspan="1">8</td></tr><tr class="failedodd"><td><a href="#m3">loginWithValidUsernameAndInvalidPassword</a></td><td rowspan="1">1736098825305</td><td rowspan="1">933</td></tr><tr><th colspan="4">myTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testcases.LoginTest</td><td><a href="#m4">loginWithInValidUsernameAndInvalidPassword</a></td><td rowspan="3">1736098816447</td><td rowspan="3">507</td></tr><tr class="passedeven"><td><a href="#m5">loginWithInValidUsernameAndInvalidPassword</a></td></tr><tr class="passedeven"><td><a href="#m6">loginWithInValidUsernameAndInvalidPassword</a></td></tr><tr class="passedeven"><td><a href="#m7">loginWithValidUsernameAndInvalidPassword</a></td><td rowspan="2">1736098820447</td><td rowspan="2">491</td></tr><tr class="passedeven"><td><a href="#m8">loginWithValidUsernameAndInvalidPassword</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mytestsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">myTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">testcases.LoginTest</td><td><a href="#m0">loginWithInvalidUsernameAndValidPassword</a></td><td rowspan="3">1737441112241</td><td rowspan="3">13819</td></tr><tr class="failedeven"><td><a href="#m1">loginWithInvalidUsernameAndValidPassword</a></td></tr><tr class="failedeven"><td><a href="#m2">loginWithInvalidUsernameAndValidPassword</a></td></tr><tr class="failedeven"><td><a href="#m3">loginWithValidCredentials</a></td><td rowspan="1">1737441175583</td><td rowspan="1">9</td></tr><tr><th colspan="4">myTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testcases.LoginTest</td><td><a href="#m4">loginWithInValidUsernameAndInvalidPassword</a></td><td rowspan="3">1737441081989</td><td rowspan="3">2195</td></tr><tr class="passedeven"><td><a href="#m5">loginWithInValidUsernameAndInvalidPassword</a></td></tr><tr class="passedeven"><td><a href="#m6">loginWithInValidUsernameAndInvalidPassword</a></td></tr><tr class="passedeven"><td><a href="#m7">loginWithValidUsernameAndInvalidPassword</a></td><td rowspan="3">1737441205741</td><td rowspan="3">1153</td></tr><tr class="passedeven"><td><a href="#m8">loginWithValidUsernameAndInvalidPassword</a></td></tr><tr class="passedeven"><td><a href="#m9">loginWithValidUsernameAndInvalidPassword</a></td></tr></tbody>
 </table>
-<h2>myTest</h2><h3 id="m0">testcases.CategoryTest#verifyCategoryButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.Loginpage.loginByExcelData()&quot; because &quot;this.lp&quot; is null
-	at testcases.CategoryTest.verifyCategoryButton(CategoryTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.LoginTest#loginWithInvalidUsernameAndValidPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [loginWithInvalidUsernameAndValidPassword] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.LoginTest#loginWithValidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\91807\eclipse-workspace\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx&quot; (The filename, directory name, or volume label syntax is incorrect)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
-	at Utilities.Excelutility.readStringData(Excelutility.java:17)
-	at pages.Loginpage.loginByExcelData(Loginpage.java:47)
-	at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
-  (Session info: chrome=131.0.6778.205)
+<h2>myTest</h2><h3 id="m0">testcases.LoginTest#loginWithInvalidUsernameAndValidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=131.0.6778.266)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b6e24859a0e26c5c66dec78a0f134ea5, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61599}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61599/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b6e24859a0e26c5c66dec78a0f134ea5
+Command: [6a6a09bbc27b80b0c5a68fcb94a28a81, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55054/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a6a09bbc27b80b0c5a68fcb94a28a81
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -54,15 +35,57 @@ Session ID: b6e24859a0e26c5c66dec78a0f134ea5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at pages.Loginpage.getalertmessage(Loginpage.java:55)
-	at testcases.LoginTest.loginWithValidUsernameAndInvalidPassword(LoginTest.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin3</td><td>admin3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin23</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin23</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pages.Loginpage.getalertmessage(Loginpage.java:60)
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.LoginTest#loginWithInvalidUsernameAndValidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin2</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=131.0.6778.266)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72f9187f4dc5222da28cf4f31b686245, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.266, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\91807\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55089/devtoo..., se:cdpVersion: 131.0.6778.266, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72f9187f4dc5222da28cf4f31b686245
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at pages.Loginpage.getalertmessage(Loginpage.java:60)
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.LoginTest#loginWithInvalidUsernameAndValidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin3</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: alert message is not as expected expected [true] but found [false]
+	at testcases.LoginTest.loginWithInvalidUsernameAndValidPassword(LoginTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoginTest#loginWithValidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\91807\git\7rmartsupermarket\Groceryapplication\src\main\resources\GroceryAppDetails.xlsx&quot; (The filename, directory name, or volume label syntax is incorrect)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at Utilities.Excelutility.readStringData(Excelutility.java:17)
+	at pages.Loginpage.loginByExcelData(Loginpage.java:51)
+	at testcases.LoginTest.loginWithValidCredentials(LoginTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin23</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin3</td><td>admin3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.LoginTest#loginWithInValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin89</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin12</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.LoginTest#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin23</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

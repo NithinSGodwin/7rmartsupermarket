@@ -1,37 +1,39 @@
 package testcases;
 
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.testng.annotations.Test;
 
 import pages.Category;
-import pages.Categorysearch;
+import pages.Homepage;
 import pages.Loginpage;
 
 public class CategoryTest extends BaseClass {
 	Loginpage lp;
+	Category cat;
+	Homepage hp;
 	
-	@Test
+	@Test(description="")
 	  public void verifyToAddCategory() throws IOException {
-		 lp.loginByExcelData();
-		 Category category=new Category(driver);
-		 category.clickOnCategoryButton();
-		 category.clickOnNewCategoryButton();
-		 category.enterCategory();
-		 category.clickOnDiscount();
-		 category.chooseFile();
-		 category.clickOnSaveButton();
+		 lp=new Loginpage(driver);
+		 hp=lp.loginByExcelData();
+		 cat=hp.clickCategoryButton().clickOnNewCategoryButton().enterCategory().clickOnDiscount().chooseFile().clickOnSaveButton();
+		 
+		 boolean isAlertLoaded=cat.isAlertDisplayed();
+		 assertTrue(isAlertLoaded,"");
 	  }
-	  @Test
-	  
+	
+	  @Test  
 	  public void verifyCategorySearch() throws IOException {
 			 lp.loginByExcelData();
-			 Category cs = new Category(driver);
-			 cs.clickOnCategoryButton();
-			 cs.clickOnSearchButton();
-			 cs.enterCategoryName();
-			 cs.clickOnSearchButton2();
+			 hp=lp.loginByExcelData();
+			 cat=hp.clickCategoryButton().clickOnSearchButton().enterCategoryName().clickOnSearchButton2();
+			 
+			 boolean isAlertLoaded=cat.checkOnResultMessage();
+			 assertTrue(isAlertLoaded,"");
 	  }
 	  
 	}

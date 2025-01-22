@@ -53,7 +53,7 @@ public class Waitutility {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(explicitwait));
 	wait.until(ExpectedConditions.titleIs(value));
 	}
-	public void implicitylyWait(WebDriver driver) {
+	public void implicitWait(WebDriver driver) {
 	
 	
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitwait));

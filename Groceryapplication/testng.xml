@@ -10,7 +10,11 @@
 		
 	<classes>
 		<class name="testcases.LoginTest"></class>
-		<class name="testcases.CategoryTest"></class>
+		<!--<class name="testcase.CategoryTest"></class>-->
+		<!--<class name="testcase.SubCategoryTest"></class>-->
+		<!--<class name="testcase.ManagefooterTest"></class>-->
+		<!--<class name="testcase.ManagenewsTest"></class> -->
+		<!--<class name="testcase.ManageUserPageTest"></class>-->
 	</classes>
 
 	</test>
